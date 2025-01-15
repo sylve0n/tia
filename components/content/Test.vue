@@ -1,9 +1,23 @@
-<script>
+<script setup>
+  defineProps({
+    href: {
+      type: String,
+      required: true,
+    },
+    external: {
+      type: Boolean,
+      default: false,
+    },
+    icon: {
+      type: String,
+      default: '',
+    },
+  })
 </script>
 
 <template>
-  <h2><ContentSlot :use="$slots.heading" unwrap="p"/></h2>
-  <div class="whatever"><ContentSlot :use="$slots.body"/></div>
+  <h2><ContentSlot :use="$slots.default" unwrap="p"/></h2>
+  <div class="whatever"><ContentSlot name="whatever"/></div>
 </template>
 
 <style lang="scss" scoped>
