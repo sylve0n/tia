@@ -13,4 +13,4 @@ Look at the [Content documentation](https://content.nuxtjs.org/) to learn more.
 sfhisolafhjasipf
 ::
 
-/
+![Alt text for image](/Disco-Elysium-3-2048x1181.jpg)
